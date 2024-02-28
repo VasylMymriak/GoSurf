@@ -611,6 +611,16 @@
             padding: 213px 0 50px 20px;
         }
     }
+    .wow {
+        visibility: visible !important;
+        animation: none !important; 
+      }
+    
+      .animate__animated {
+        animation: none !important; 
+        animation-duration: 0s !important;
+        transition: none !important; 
+      }
 
 }
 
