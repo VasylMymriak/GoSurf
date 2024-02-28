@@ -183,3 +183,23 @@ for (let anchor of anchors) {
     })
   })
 }
+
+function toggleAnimations() {
+  var screenWidth = getWindowWidth();
+  var elements = document.querySelectorAll('.wow, .animate__animated');
+
+  if (screenWidth <= 650) {
+      elements.forEach(function(element) {
+          element.classList.remove('wow');
+          element.classList.remove('animate__animated');
+      });
+  }
+}
+
+window.onload = function() {
+  toggleAnimations();
+};
+
+window.onresize = function() {
+  toggleAnimations();
+};
